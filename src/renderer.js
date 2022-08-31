@@ -29,3 +29,7 @@
 import './index.css';
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
+
+for (const k of ["chrome", "node", "electron"]) {
+    document.getElementById(`${k}-version`).innerText = window.versions[k]
+}
